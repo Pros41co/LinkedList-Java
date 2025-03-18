@@ -63,6 +63,11 @@ public class LinkedList {
     }
 
     public Patient getPatient(int id) {
+
+        if (head.patient.getId() == id) {
+            return head.patient;
+        }
+        
         if (head != null) {
             Nodo currentNodo = head;
             while (currentNodo.next != null) {
